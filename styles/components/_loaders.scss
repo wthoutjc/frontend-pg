@@ -1,0 +1,93 @@
+svg {
+  fill: white;
+}
+.content-loading {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #123;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  z-index: 10000;
+}
+
+.image-container {
+  width: 310px;
+  height: 310px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-container_mobile {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-container_mobile::before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100px;
+  height: 130%;
+  background: linear-gradient(#26918bbd, rgba(26, 53, 80, 0.897));
+  animation: cardAnimate 4s linear infinite;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 170px;
+  height: 130%;
+  background: linear-gradient(#26918bbd, rgba(26, 53, 80, 0.897));
+  animation: cardAnimate 4s linear infinite;
+}
+
+.image-container::after {
+  border-radius: 100%;
+  content: "";
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  inset: 15px;
+  flex-direction: column;
+  background-color: #123;
+}
+
+.image-container > svg {
+  position: absolute;
+  z-index: 10000;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+@keyframes cardAnimate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,120 @@
+.download-pdf {
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-size: 10px !important;
+  margin: 10px;
+  color: #000;
+  font-family: "Times New Roman", Times, serif !important;
+}
+.download-header {
+  width: 100%;
+  display: flex;
+  border: 1px solid black;
+}
+.download-logos {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.download-nit-num-pedido > h6:nth-child(2n) {
+  font-size: 105% !important;
+  color: red;
+  font-family: "Times New Roman", Times, serif !important;
+}
+.download-general-info {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 25% 25% 25%;
+  font-family: "Times New Roman", Times, serif !important;
+}
+.download-tkgfact,
+.download-tkgfactbonif,
+.download-subtotal,
+.download-iva,
+.download-ivabonif,
+.download-total,
+.download-name-client,
+.download-id-client,
+.download-direccion-client,
+.download-phone-client,
+.download-city-client,
+.download-departamento-client,
+.download-name-seller,
+.download-fecha-pedido {
+  display: flex;
+  align-items: center;
+  padding: 0.1em;
+  box-sizing: border-box;
+  border: 0.5px solid black;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.downlaod-footer {
+  width: 100%;
+  display: flex;
+  border: 1px solid black;
+}
+.download-tyc {
+  width: 30%;
+  padding: 0.4em;
+  overflow: hidden;
+  text-align: justify;
+}
+.download-tyc > p {
+  font-size: 60% !important;
+  font-family: "Times New Roman", Times, serif !important;
+}
+.download-specific-info {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 33% 33% 33%;
+}
+.download-extra-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.download-extra-info > h3 {
+  font-size: 8px !important;
+  font-family: "Times New Roman", Times, serif !important;
+}
+.download-extra-info > h4,
+.download-pdf .download-extra-info > h5 {
+  font-size: 7px !important;
+  font-family: "Times New Roman", Times, serif !important;
+}
+.table-pdf-download {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 0;
+}
+.table-pdf-download thead tr td,
+.table-pdf-download tbody tr td {
+  font-size: 90% !important;
+  border: 1px solid black;
+  padding: 0.15em;
+}
+.table-pdf-download tbody tr td p {
+  font-family: "Times New Roman", Times, serif !important;
+  font-size: 0.7em;
+}
+.table-pdf-download thead tr td > h5,
+.table-pdf-download tbody tr td > h5 {
+  font-family: "Times New Roman", Times, serif !important;
+}
+@media print {
+  @page {
+    size: landscape;
+  }
+  .download-pdf {
+    max-width: 70vw;
+    padding: 0.6em;
+    color: #000;
+    font-family: "Times New Roman", Times, serif !important;
+  }
+}

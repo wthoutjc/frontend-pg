@@ -1,0 +1,16 @@
+.notification__container {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  z-index: 20000;
+  height: fit-content;
+  max-height: 50vh;
+  width: 300px;
+  overflow: auto;
+}
+.notification__container::-webkit-scrollbar {
+  display: none;
+}
+.notification__alert {
+  margin-bottom: 1em;
+}

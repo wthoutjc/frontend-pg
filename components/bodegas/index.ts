@@ -1,0 +1,6 @@
+export * from "./Bodegas"
+export * from "./NewBodega"
+export * from "./Bodega"
+export * from "./BodegaSkeleton"
+export * from "./EditBodega"
+export * from "./DeleteBodega"

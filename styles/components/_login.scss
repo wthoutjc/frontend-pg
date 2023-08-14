@@ -1,0 +1,76 @@
+.login__form form,
+.login__form,
+.login__container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+.login__container {
+  margin-top: 1em;
+}
+.login__input_container {
+  display: flex;
+}
+.login__input {
+  background-color: $aguamarinaSecondary;
+  border: none;
+  border-bottom: 0.3em solid $azulOscuroSecondary;
+  border-radius: 12px 0 0 0;
+  color: #fff;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1em;
+  padding: 1em;
+  margin-bottom: 1em;
+  outline: none;
+  width: 100%;
+}
+.login__icon_container {
+  align-items: center;
+  animation: none;
+  background-color: $aguamarinaTertiary;
+  border-bottom: 0.3em solid $azulOscuroSecondary;
+  border-radius: 0 0 12px 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  min-width: 20%;
+}
+.login__button_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.show-password {
+  border: none;
+  cursor: pointer;
+  margin-bottom: 1.1em;
+  background-color: $aguamarinaSecondary;
+  border-bottom: 0.35em solid $azulOscuroSecondary;
+  color: $azulOscuroSecondary;
+  display: flex;
+  align-items: center;
+  padding-right: 0.3em;
+}
+.login__input::placeholder {
+  color: rgb(196, 192, 192, 0.7);
+}
+.login__input:-webkit-autofill,
+.login__input:-webkit-autofill:focus {
+  font-family: "Montserrat", sans-serif;
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+.login_error_container {
+  border-radius: 0.3em;
+  color: $redPrimary;
+  box-sizing: border-box;
+  margin-bottom: 1em;
+}
+@media all and (max-width: 600px) {
+  
+}

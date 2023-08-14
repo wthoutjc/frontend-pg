@@ -1,0 +1,76 @@
+.table__company,
+.table__company_mobile {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table__selected {
+  background-color: rgba(144, 202, 249, 0.24) !important;
+}
+.table__company thead > tr {
+  background-color: rgba(26, 53, 80, 0.897);
+  color: white;
+  text-align: left;
+  font-weight: 600;
+  position: sticky;
+  top: 45px;
+  z-index: 100;
+}
+.table__company_mobile thead > tr {
+  background-color: rgba(26, 53, 80, 0.897);
+  color: white;
+  text-align: left;
+  font-weight: 600;
+  position: sticky;
+  top: 35px;
+  z-index: 100;
+}
+.table__company_mobile th,
+.table__company_mobile td,
+.table__company th,
+.table__company td {
+  color: white;
+  padding: 12px 15px;
+  box-sizing: border-box;
+}
+.table__company_mobile tbody tr,
+.table__company tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+.table__company_mobile tbody tr:nth-of-type(even),
+.table__company tbody tr:nth-of-type(even) {
+  background-color: #26918bbd;
+}
+.table__company_mobile tbody tr:nth-of-type(even):hover,
+.table__company_mobile tbody tr:nth-of-type(odd):hover,
+.table__company tbody tr:nth-of-type(even):hover,
+.table__company tbody tr:nth-of-type(odd):hover {
+  background-color: #0e504d96;
+}
+.table__company_mobile tbody tr:nth-of-type(odd),
+.table__company tbody tr:nth-of-type(odd) {
+  background-color: #08777296;
+}
+.table__company_mobile tbody tr:last-of-type,
+.table__company tbody tr:last-of-type {
+  border-bottom: 3px solid rgba(26, 53, 80, 0.897);
+}
+.table__company tbody tr td .agenda-table-buttons {
+  width: 100%;
+  height: 100%;
+}
+.table__company tbody tr td .agenda-table-buttons > button {
+  background-color: #26918bbd;
+  color: white;
+  border: 1px solid white;
+  padding: 0.3em;
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.table__company tbody tr td .agenda-table-buttons > button:hover {
+  background-color: #0e504d96;
+  transition: background-color 0.3s;
+}
